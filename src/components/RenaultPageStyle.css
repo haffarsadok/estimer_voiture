@@ -1,0 +1,30 @@
+/* Reset default margin and padding */
+html, body {
+  height: 100%;
+ 
+}
+
+/* Allow scrolling */
+body {
+  overflow: auto;
+}
+
+/* Set minimum height for the Container to fill the viewport */
+#root {
+  min-height: 100vh;
+}
+
+.renault-container {
+  margin-top: 60px;
+  margin-bottom: 60px; /* Adjust the value based on your navbar height */
+  background-color: #fff; /* Optionally, ensure the Container has a white background for clarity */
+  
+}
+
+
+
+
+
+
+
+

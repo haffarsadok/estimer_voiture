@@ -1,0 +1,108 @@
+/* VehiculeOccasion.css */
+
+
+.card {
+    display: flex;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for absolute positioning */
+    margin-right: 20%;
+    margin-left: 20%;
+}
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .image-container img {
+    max-width: auto;
+    max-height: auto;
+    border-radius: 4px;
+  }
+  
+  .info-container {
+    flex: 2;
+    padding: 15px;
+    
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold;
+    
+  }
+  
+  .owner-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .owner-image {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .details div {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    
+  }
+  
+  .card p {
+    margin: 8px 0;
+    font-weight: bold;
+    
+  }
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-container {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 15px auto; 
+    
+  }
+  
+  
+  .detail-item img {
+    width: 25px;
+    height: auto;
+    margin-bottom: 5px; /* Add margin at the bottom for spacing */
+  }
+  
+  .icon-text-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .icon-text-container img {
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+  }

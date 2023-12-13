@@ -1,0 +1,91 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bloc-title h3 {
+  margin: 0;
+  color: black;
+}
+.bloc-title h4 {
+  margin: 0;
+  font-style: normal;
+  color: grey; /* Set to grey or any color code you prefer */
+}
+
+.title-separator {
+  height: 2px;
+  width: 250px; /* Adjust width to your preference */
+  background-color: rgb(0, 174, 255); /* The color of the separator line */
+  margin: 10px auto 20px; /* Centers the line and adds some space from the title */
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brands-list > div {
+  flex: 0 1 calc(20% - 10px); /* 20% of the container width with 10px margin between items */
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+
+
+@media (max-width: 1200px) {
+  .brands-list > div {
+    flex: 0 1 calc(25% - 10px); /* 25% of the container width with 10px margin between items */
+  }
+}
+
+@media (max-width: 960px) {
+  .brands-list > div {
+    flex: 0 1 calc(33.333% - 10px); /* 33.333% of the container width with 10px margin between items */
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-list > div {
+    flex: 0 1 calc(50% - 10px); /* 50% of the container width with 10px margin between items */
+  }
+}
+
+.custom-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Adjust the border radius as needed */
+  text-align: center; /* Center-align text */
+}
+
+.custom-dialog.open {
+  display: block;
+}
+
+.dialog-content {
+  font-size: 100px; /* Adjust the text size as needed */
+}
+
+.dialog-content p {
+  margin: 0;
+  font-size: large;
+  color: aqua; /* Remove default margin for the paragraph */
+}
+
+.dialog-content button {
+  margin-top: 10px; /* Add some space between the text and the button */
+}
