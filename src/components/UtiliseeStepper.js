@@ -56,6 +56,8 @@ function estimateCarPrice(formData) {
     price = 53000;
   } else if (yearModel === 2021 && marque === "Renault" && model === "CLIO") {
     price = 55000;
+  }else if (yearModel === 2022 && marque === "Renault" && model === "CLIO") {
+    price = 40000;
   }
 
   console.log("Price after if block:", price);
@@ -248,11 +250,7 @@ const UtiliseeStepper = () => {
       window.open('https://www.autolive.be/fr/vehicule-accidente/vehicule-accidente-a-vendre/pt_id:76,206/vehicle_brand_model:4561,4564,4561-4564/reg_year:2019,2019');
     } else if (formData.marque === 'Renault' && formData.model === 'CLIO' && formData.yearModel === 2021 && formData.vehiculeAccidente === "oui") {
       window.open('https://www.autolive.be/fr/vehicule-accidente/vehicule-accidente-a-vendre/pt_id:76,206/vehicle_brand_model:4561,4564,4561-4564/reg_year:2021,2021');
-    } else {
-      // Handle other conditions or provide a default action
-      console.log('No matching condition for redirection.');
-      alert('No matching condition for checking price.');
-    }
+    } 
   };
   const handleDialogClose = () => {
     setOpenDialog(false)

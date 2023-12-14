@@ -10,13 +10,13 @@ const VehiculeOccasion = () => {
   const vehiculePubItems = [
     {
       imageUrl: "https://catalogue.automobile.tn/max/2022/04/46752.webp?t=1699275968",
-      modelName: "Renault Megane",
-      price: "94 950 ",
+      modelName: "Renault Clio",
+      price: "44 500",
       user_url: 'https://imageshack.com/i/pnrkB1swj',
       user_name: "Haffar Sadok",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      kilometrage: "50 000",
-      model: "2022",
+      description: "Citadine, 5 cv, transmission Traction, Affichage tête haute, Autoradio, Autoradio CD, Autoradio CD/Mp3, Bluetooth, Connectivité Aux, usb, iPod, Sièges réglables en hauteur, Vitres teintées, Volant/levier de vitesse en cuir, Volant multi-fonctions, 3 appuis têtes arrières, Volant réglable hauteur/profondeur",
+      kilometrage: "82 000",
+      model: "2020",
       marque: "Renault",
       energie: "Essence",
       boite: "Manuelle"

@@ -77,6 +77,12 @@ const NouveauStepper = () => {
   const [loading, setLoading] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
   function predict_price(formData) {
+    
+    if (formData.marque === 'VOLKSWAGEN' && formData.model === 'POLO 1.0 L TSI Life') {
+      console.log("kifkif")
+    }else {
+      console.log("mich kifkif")
+    }
     let base_price;
     if (formData.marque === 'Renault' && formData.model === 'CLIO 1.0 L SCE LIFE PLUS') {
       base_price = 46500;
@@ -84,6 +90,10 @@ const NouveauStepper = () => {
       base_price = 67000;
     } else if (formData.marque === 'Renault' && formData.model === 'MEGANE SEDAN 1.3 L TCE 140 BVA') {
       base_price = 68700;
+    } else if (formData.marque === 'VOLKSWAGEN' && formData.model === 'POLO 1.0 L TSI DRIVE') {
+      base_price = 62910;
+    }else if (formData.marque === 'VOLKSWAGEN' && formData.model === 'POLO 1.0 L TSI Life') {
+      base_price = 69050;
     }
     // Base price in Tunisian Dinar as provided
     const adjustments = {
@@ -185,9 +195,14 @@ const NouveauStepper = () => {
       window.open('https://www.automobile.tn/fr/neuf/renault/megane-sedan/1.3-l-tce-140');
     } else if (formData.marque === 'Renault' && formData.model === 'MEGANE SEDAN 1.3 L TCE 140 BVA') {
       window.open('https://www.automobile.tn/fr/neuf/renault/megane-sedan/1.3-l-tce-140-bva');
+    }else if (formData.marque === 'VOLKSWAGEN' && formData.model === 'POLO 1.0 L TSI DRIVE') {
+      window.open('https://www.automobile.tn/fr/neuf/volkswagen/polo/1.0-l-drive');
+    }else if (formData.marque === 'VOLKSWAGEN' && formData.model === 'POLO 1.0 L TSI Life') {
+      window.open('https://www.automobile.tn/fr/neuf/volkswagen/polo/1.0-l-life');
     } else {
       // Handle other conditions or provide a default action
       console.log('No matching condition for redirection.');
+      
     }
   };
   const handleDialogClose = () => {
@@ -223,7 +238,7 @@ const NouveauStepper = () => {
     });
     setActiveStep(0);
     setEstimatedPrice(null);
-    navigate('/'); // Navigate to the root URL
+    navigate('/estimer_voiteure'); // Navigate to the root URL
   };
 
 
